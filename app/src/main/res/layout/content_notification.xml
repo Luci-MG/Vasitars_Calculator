@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <!--android:drawableRight="@drawable/ic_notifications_none_white_24dp"-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Follow us on"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fb"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="#3b5998"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_facebook_app_symbol"
+                        app:tint="@null"
+                        android:onClick="onClickfb"
+                        android:layout_weight="1"/>
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/insta"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:backgroundTint="#ffffff"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_instagram"
+                        app:tint="@null"
+                        android:onClick="onClickinsta"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/utube"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:backgroundTint="#d7143a"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:tint="@null"
+                        app:srcCompat="@drawable/ic_youtube_1"
+                        android:onClick="onClickyoutube"
+                        android:layout_weight="1"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/likdn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:layout_weight="1"
+                        app:tint="@null"
+                        android:backgroundTint="#0077b7"
+                        android:onClick="onClicklinkedin"
+                        app:srcCompat="@drawable/ic_linkedin" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="80"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/twitter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        app:tint="@null"
+                        android:backgroundTint="#ffffff"
+                        android:layout_margin="@dimen/fab_margin"
+                        app:srcCompat="@drawable/ic_twitter"
+                        android:onClick="onClicktweet"
+                        android:layout_weight="1"/>
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:layout_weight="1"
+                        app:tint="@null"
+                        android:backgroundTint="#ffffff"
+                        android:onClick="onClickwebsitee"
+                        app:srcCompat="@drawable/ic_domain" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Contact us"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Email: info@vasitars.com"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Phone: +91 9654100156 "
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="+91 7003021049"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="--swipe up--"
+                android:fontFamily="@font/open_sans"
+                android:textSize="9dp"
+                android:textColor="#FFFFFF"/>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Where to meet"
+                android:fontFamily="@font/open_sans"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#6fff" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Registered Office:"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="House No - 7/50, Rohini,"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Delhi - 110085"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Corporate Office:"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Plot No. - 33E,"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Mahila Udami Park - 2,"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Ecotech - III Greater Noida"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Uttar Pradesh - 201306."
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="12dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:text="Vasitars R&amp;D Centre:"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="H No. 14,4th Cross Street,"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Rajiv Nagar,Near "
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Sivan Koil (Shiva's Temple),"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Perungudi,"
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:text="Chennai - 600096. "
+                android:fontFamily="@font/open_sans"
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"/>
+            <androidx.legacy.widget.Space
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+            <TextView
+                android:id="@+id/version_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="3dp"
+                android:text="Version : 1.0.2"
+                android:fontFamily="@font/open_sans"
+                android:textSize="13dp"
+                android:textColor="#FFFFFF"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="6dp"
+                android:textAlignment="center"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="40dp"
+                android:text="© Vasitars 2019"
+                android:fontFamily="@font/open_sans"
+                android:textSize="13dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

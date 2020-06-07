@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#E9E9E9</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBlue">#88ccdf</color>
+    <color name="color1">#97dbfd</color>
+    <color name="color2">#7d3d21</color>
+    <color name="color3">#88ccdf</color>
+    <color name="color4">#59717c</color>
+    <color name="color5">#6f2343</color>
+    <color name="color6">#f48938</color>
+    <color name="toolbar23">#CF479E</color>
+    <color name="toolbar21">#4d98fd</color>
+    <color name="toolbar22">#9E37FC</color>
+    <color name="toolbar">#161C3E</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
